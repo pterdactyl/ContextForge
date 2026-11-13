@@ -1,0 +1,17 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg17
+    container_name: contextforge-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: contextforge
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5434:5432"
+    volumes:
+      - contextforge_pgdata:/var/lib/postgresql/data
+
+volumes:
+  contextforge_pgdata:
+

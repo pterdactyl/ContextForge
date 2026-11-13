@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.env
+
+# macOS
+.DS_Store
+
+# Frontend (later)
+node_modules/
+dist/
+
+# Editor
+.nvim/
