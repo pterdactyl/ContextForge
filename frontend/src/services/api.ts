@@ -23,7 +23,8 @@ export async function uploadDocument(file: File) {
 }
 
 export async function askQuestion(
-  question: string
+  question: string,
+  conversationId: string | null = null
 ): Promise<ChatResponse> {
   const response = await fetch(
     `${API_BASE_URL}/chat/ask`,
@@ -35,6 +36,7 @@ export async function askQuestion(
       body: JSON.stringify({
         query: question,
         top_k: 5,
+        conversation_id: conversationId,
       }),
     }
   );

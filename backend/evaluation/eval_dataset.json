@@ -1,0 +1,52 @@
+[
+  {
+    "query": "What technologies does the author of the excerpt have professional experience with?",
+    "relevant_chunk_ids": [
+      "12f1c7e7-a09c-4f86-8851-9bbae64512e5"
+    ],
+    "source_filename": "Cover Letter.pdf",
+    "source_chunk_index": 3,
+    "source_excerpt": "oftware architecture, code analysis, and \nmodernization challenges, which I believe align particularly well with your team's focus on \nimproving existing systems. \n \nAlthough my professional experience has primarily been with JavaScript and TypeScript \ntechnologies, I have a strong foundation in obj",
+    "verified": false
+  },
+  {
+    "query": "What programming languages did the candidate use to develop and maintain internal web applications in their previous role?",
+    "relevant_chunk_ids": [
+      "2061713a-5830-453e-8f7c-152b07a8b789"
+    ],
+    "source_filename": "Cover Letter.pdf",
+    "source_chunk_index": 1,
+    "source_excerpt": "m and help modernize business-critical applications. \n \nIn my previous role as a Software Engineer at HealthcareJob.Agency, I developed and \nmaintained internal web applications using Next.js, TypeScript, Node.js, and PostgreSQL. My \nwork included building RESTful APIs, implementing secure authentic",
+    "verified": false
+  },
+  {
+    "query": "What is the programming language used in the development of RepoMap?",
+    "relevant_chunk_ids": [
+      "fcf106e7-afaa-4c89-a16a-ce2723fee1dc"
+    ],
+    "source_filename": "Cover Letter.pdf",
+    "source_chunk_index": 2,
+    "source_excerpt": "es. I also \nworked closely with stakeholders to understand business requirements, troubleshoot \nproduction issues, and deliver solutions that improved daily operations. \n \nBeyond my professional experience, I have been developing RepoMap, a Python-based tool \ndesigned to analyze legacy codebases, ma",
+    "verified": false
+  },
+  {
+    "query": "What is Peter Lin's current occupation or field of expertise?",
+    "relevant_chunk_ids": [
+      "76303f74-32ad-40a2-ba82-aae484629482"
+    ],
+    "source_filename": "Cover Letter.pdf",
+    "source_chunk_index": 4,
+    "source_excerpt": "xpand my experience with .NET \ntechnologies while contributing my existing skills in full-stack development, testing, and \nproblem-solving. \n \nThank you for your time and consideration. I would welcome the opportunity to discuss how \nmy experience and willingness to learn could contribute to Old Rep",
+    "verified": false
+  },
+  {
+    "query": "What is Peter Lin's background according to his letter of interest?",
+    "relevant_chunk_ids": [
+      "92d8880d-6e2f-4a9b-929f-881f60f2b06c"
+    ],
+    "source_filename": "Cover Letter.pdf",
+    "source_chunk_index": 0,
+    "source_excerpt": "Peter Lin \nMarkham, Ontario \n647-978-3411  \npeterlin0202@hotmail.com  \n  \nNovember 2, 2026 \n \nDear Hiring Team, \n \nI am writing to express my interest in the Software Developer position at Old Republic Canada. \nWith a background in Automation Engineering Technology and hands-on experience in full-\ns",
+    "verified": false
+  }
+]

@@ -7,6 +7,7 @@ export default function Chat() {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [conversationId, setConversationId] = useState<string | null>(null);
 
   async function handleSend() {
     const text = question.trim();
@@ -23,7 +24,8 @@ export default function Chat() {
     setLoading(true);
 
     try {
-      const response = await askQuestion(text);
+      const response = await askQuestion(text, conversationId);
+      setConversationId(response.conversationId);
 
       setMessages((prev) => [
         ...prev,
@@ -46,6 +48,19 @@ export default function Chat() {
 
   return (
     <div className="chat">
+      <button
+      type="button"
+      className="btn"
+      disabled={loading}
+      onClick={() => {
+        setConversationId(null);
+        setMessages([]);
+        setQuestion("");
+        setError("");
+      }}
+    >
+      New Chat
+    </button>
       <div className="messages">
         {messages.length === 0 && !loading && (
           <p className="empty-chat">
@@ -75,7 +90,9 @@ export default function Chat() {
                   {message.sources.map((source, sourceIndex) => (
                     <div className="source" key={sourceIndex}>
                       {source.filename} · chunk {source.chunk_index} ·{" "}
-                      {source.similarity.toFixed(3)}
+                      {source.similarity != null 
+                        ? source.similarity.toFixed(3)
+                        : "N/A"}
                     </div>
                   ))}
                 </div>
